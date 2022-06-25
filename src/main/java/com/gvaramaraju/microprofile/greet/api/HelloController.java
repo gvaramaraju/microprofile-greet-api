@@ -4,15 +4,13 @@ import javax.inject.Singleton;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 
-/**
- *
- */
-@Path("/hello")
+/** */
+@Path("/greet")
 @Singleton
 public class HelloController {
 
-    @GET
-    public String sayHello() {
-        return "Hello World";
-    }
+  @GET
+  public String greet() {
+    return "Hello World!!";
+  }
 }
